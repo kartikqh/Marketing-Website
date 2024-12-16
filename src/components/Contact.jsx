@@ -56,7 +56,7 @@ const Contact = () => {
                 Address
               </h2>
               <p className="text-sm text-slate-800">
-                A108 Adam Street, New York, NY 535022
+                51 Saraswati Vihar  Raipur road ,Dehrdaun, UK(In) 248001
               </p>
             </div>
           </div>

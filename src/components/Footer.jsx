@@ -21,8 +21,8 @@ const Footer = () => {
     <div className="md:grid grid-cols-4 p-5 md:p-0">
       <div data-aos="fade-right" >
         <h1 className="text-xl font-light mb-3">ONKAR DIGITALS</h1>
-        <p className="mb-1">A108 Adam Street</p>
-        <p className="mb-5">New York, NY 535022</p>
+        <p className="mb-1">51 Saraswati Vihar  Raipur road </p>
+        <p className="mb-5">Dehrdaun, UK(In) 248001</p>
 
         <div>
           <p className="font-medium">
