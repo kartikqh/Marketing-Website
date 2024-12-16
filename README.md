@@ -51,5 +51,5 @@ To get a local copy up and running, follow these simple steps:
    ```sh
    npm run dev
 
-Open your browser and go to http://localhost:5173/Marketing-Website/ to see the website in action.
+Open your browser and go to http://localhost:5173/ to see the website in action.
 
