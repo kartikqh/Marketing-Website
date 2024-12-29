@@ -18,7 +18,7 @@ const NavBar = () => {
         href="/"
         className="lg:text-3xl text-2xl tracking-wide font-light text-[#7A6960]"
       >
-        ONKAR DIGITALS
+        Onkar Digital Services
       </a>
       {/* menu */}
       <div className="lg:flex items-center justify-between lg:gap-14 hidden">
@@ -55,7 +55,7 @@ const NavBar = () => {
         </a>
 
         {/* CTA */}
-        {/* <button className="bg-orange-600 text-lg text-slate-50 rounded-3xl px-4 py-1">
+        {/* <button className="bg-purple-600 text-lg text-slate-50 rounded-3xl px-4 py-1">
           Get Strated
         </button> */}
         <a href="/#contact" className="">

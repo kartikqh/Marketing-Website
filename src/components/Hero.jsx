@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import CtaButton from "./CtaButton";
 import VideoBtn from "./VideoBtn";
-import img from "../img/hero-img.svg";
+import img from "../img/logo.png";
 
 // aos
 import AOS from "aos";
@@ -71,7 +71,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="lg:w-1/2 w-full md:w-3/4 py-16 px-10 md:px-0">
+      <div className="lg:w-1/2 w-full md:w-3/4 py-10 px-10 md:px-0">
         <img ref={myElement} className="w-full animate" src={img} alt="img" />
       </div>
 

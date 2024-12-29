@@ -96,7 +96,7 @@ const Hireus = () => {
         </div>
         
       </div>
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100 mt-20 md:mt-0">
+      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-orange-100 mt-20 md:mt-0">
         <Newsletter />
       </section>
       <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100">

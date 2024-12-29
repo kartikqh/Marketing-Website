@@ -7,7 +7,7 @@ const TeamMemberTemplate = ({getData}) => {
 
   return (
     <div className="container min-w-full min-h-lvh secondary-font">
-      <section className="w-full max-h-fit pt-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
+      <section className="w-full max-h-fit pt-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-orange-100">
         <div><h1></h1></div>
       </section>
     </div>

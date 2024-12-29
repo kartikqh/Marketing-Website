@@ -42,7 +42,7 @@ const Appproducts = ({ img }) => {
                 </li>
                 <li>
                   <span className="font-semibold ">Project Url:</span>{" "}
-                  <span className="text-orange-600">www.example.com</span>
+                  <span className="text-purple-600">www.example.com</span>
                 </li>
               </ul>
             </div>
@@ -68,7 +68,7 @@ const Appproducts = ({ img }) => {
       </section>
 
       {/* Newletter & Footer */}
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#FEFAF8] border-b border-orange-100">
+      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-orange-100">
         <Newsletter />
       </section>
       <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100">

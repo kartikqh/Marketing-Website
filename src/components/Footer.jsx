@@ -20,16 +20,16 @@ const Footer = () => {
   return (
     <div className="md:grid grid-cols-4 p-5 md:p-0">
       <div data-aos="fade-right" >
-        <h1 className="text-xl font-light mb-3">ONKAR DIGITALS</h1>
+        <h1 className="text-xl font-light mb-3">Onkar Digital Services</h1>
         <p className="mb-1">51 Saraswati Vihar  Raipur road </p>
         <p className="mb-5">Dehrdaun, UK(In) 248001</p>
 
         <div>
           <p className="font-medium">
-            Phone: <span className="font-normal ml-1">+1 5589 55488 55</span>
+            Phone: <span className="font-normal ml-1">+91 88006 44378</span>
           </p>
           <p className="font-medium">
-            Email: <span className="font-normal ml-1">info@gmail.com</span>
+            Email: <span className="font-normal ml-1">oberoi181994@gmail.com</span>
           </p>
         </div>
       </div>
@@ -105,19 +105,19 @@ const Footer = () => {
           valies
         </p>
         <div className="flex justify-between pr-5 mt-5">
-          <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">
+          <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-purple-600">
             <IoLogoTwitter size={"26px"} />
           </div>
 
-          <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">
+          <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-purple-600">
             <IoLogoFacebook size={"26px"} />
           </div>
 
-          <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">
+          <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-purple-600">
             <IoLogoInstagram size={"26px"} />
           </div>
 
-          <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-orange-600">
+          <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-purple-600">
             <IoLogoLinkedin size={"26px"} />
           </div>
         </div>

@@ -42,7 +42,7 @@ const About = () => {
         About Us
       </h1>
       <div className="flex justify-center items-center mt-2 mb-10">
-        <div className="bg-orange-600 h-1 w-16 rounded"></div>
+        <div className="bg-purple-600 h-1 w-16 rounded"></div>
       </div>
 
       <div className="flex flex-col lg:flex-row items-center lg:gap-10 secondary-font">
@@ -69,7 +69,7 @@ const About = () => {
             className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5"
           >
             <div
-              className="bg-orange-600 w-fit p-2 md:p-5 rounded"
+              className="bg-purple-600 w-fit p-2 md:p-5 rounded"
               style={{ color: "white" }}
             >
               <BsPeople size={"28px"} />
@@ -90,7 +90,7 @@ const About = () => {
             className="flex flex-col lg:flex-row justify-center items-center gap-5 mt-5"
           >
             <div
-              className="bg-orange-600 w-fit p-2 md:p-5 rounded"
+              className="bg-purple-600 w-fit p-2 md:p-5 rounded"
               style={{ color: "white" }}
             >
               <BsPeople size={"28px"} />

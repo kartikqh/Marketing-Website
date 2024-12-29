@@ -7,9 +7,9 @@ import Footer from "../components/Footer";
 const Template = ({ title, desc, image }) => {
   return (
     <>
-      <div className="secondary-font bg-red-900">
+      <div className="secondary-font bg-white-900">
         <div className="md:py-14 lg:px-32 border-b border-orange-100">
-          <div className="flex flex-col md:flex-row gap-10 justify-center bg-[#FEFAF8] items-center md:border md:shadow-xl rounded overflow-hidden md:p-16 p-10">
+          <div className="flex flex-col md:flex-row gap-10 justify-center bg-[#F8F8FE] items-center md:border md:shadow-xl rounded overflow-hidden md:p-16 p-10">
             {/* Content */}
             <div className="w-full md:w-1/2">
               <h1 className="text-[#7A6960] md:text-5xl text-3xl font-semibold">

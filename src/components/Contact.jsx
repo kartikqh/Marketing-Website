@@ -32,7 +32,7 @@ const Contact = () => {
         Contact
       </h1>
       <div className="flex justify-center items-center mt-2">
-        <div className="bg-orange-600 h-1 w-16 rounded"></div>
+        <div className="bg-purple-600 h-1 w-16 rounded"></div>
       </div>
       <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
         Reach out for a new project or just say hello
@@ -46,8 +46,8 @@ const Contact = () => {
         >
           <div className="flex gap-3 mt-3 mb-12">
             <div
-              className="rounded-full h-fit bg-orange-100 p-2"
-              style={{ color: "#EA580C", fontSize: "28px" }}
+              className="rounded-full h-fit bg-purple-100 p-2"
+              style={{ color: "#CF58B2", fontSize: "28px" }}
             >
               <IoLocationOutline />
             </div>
@@ -63,8 +63,8 @@ const Contact = () => {
 
           <div className="flex gap-3 mb-12">
             <div
-              className="rounded-full h-fit bg-orange-100 p-2"
-              style={{ color: "#EA580C", fontSize: "28px" }}
+              className="rounded-full h-fit bg-purple-100 p-2"
+              style={{ color: "#CF58B2", fontSize: "28px" }}
             >
               <IoCallOutline />
             </div>
@@ -72,14 +72,14 @@ const Contact = () => {
               <h2 className="lg:text-xl text-[#7A6960] font-semibold">
                 Call Us
               </h2>
-              <p className="text-sm text-slate-800">+1 5589 55488 55</p>
+              <p className="text-sm text-slate-800">+91 88006 44378</p>
             </div>
           </div>
 
           <div className="flex gap-5 mb-12">
             <div
-              className="rounded-full h-fit bg-orange-100 p-2"
-              style={{ color: "#EA580C", fontSize: "28px" }}
+              className="rounded-full h-fit bg-purple-100 p-2"
+              style={{ color: "#CF58B2", fontSize: "28px" }}
             >
               <TfiEmail />
             </div>
@@ -95,7 +95,7 @@ const Contact = () => {
             <iframe
               width="100%"
               height="100%"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14010.76256980872!2d77.22260515427726!3d28.60905606083753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2db961be393%3A0xf6c7ef5ee6dd10ae!2sIndia%20Gate%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1717776828829!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3080.8473589649675!2d78.06152887556436!3d30.319918774786032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDE5JzExLjciTiA3OMKwMDMnNTAuOCJF!5e1!3m2!1sen!2sin!4v1734350556142!5m2!1sen!2sin" 
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
