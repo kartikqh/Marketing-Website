@@ -42,7 +42,7 @@ const Contact = () => {
         {/* map */}
         <div
           data-aos="fade-up"
-          className="lg:w-[40%] px-10 py-5 shadow-xl border-t-[3px] border-b-[3px] border-orange-600 mb-7 lg:mb-0"
+          className="lg:w-[40%] px-10 py-5 shadow-xl border-t-[3px] border-b-[3px] border-purple-600 mb-7 lg:mb-0"
         >
           <div className="flex gap-3 mt-3 mb-12">
             <div
@@ -106,7 +106,7 @@ const Contact = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1600"
-          className="lg:w-[60%] px-10 py-5 shadow-xl border-t-[3px] border-b-[3px] border-orange-600"
+          className="lg:w-[60%] px-10 py-5 shadow-xl border-t-[3px] border-b-[3px] border-purple-600"
         >
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="md:flex gap-6">
@@ -118,7 +118,7 @@ const Contact = () => {
                     type="text"
                     id="name"
                     placeholder="John Doe"
-                    className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-orange-600 outline-none"
+                    className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-purple-600 outline-none"
                   />
                 </div>
               </div>
@@ -131,7 +131,7 @@ const Contact = () => {
                     type="email"
                     id="email"
                     placeholder="johndoe@gmail.com"
-                    className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-orange-600 outline-none"
+                    className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-purple-600 outline-none"
                   />
                 </div>
               </div>
@@ -144,7 +144,7 @@ const Contact = () => {
                 type="text"
                 id="subject"
                 placeholder="Your subject"
-                className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-orange-600 outline-none"
+                className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-purple-600 outline-none"
               />
             </div>
 
@@ -154,7 +154,7 @@ const Contact = () => {
                 {...register("message", { required: true })}
                 id="message"
                 placeholder="Enter your message"
-                className="w-full h-60 p-3 my-3 rounded border border-zinc-300 focus:border focus:border-orange-600 outline-none resize-none"
+                className="w-full h-60 p-3 my-3 rounded border border-zinc-300 focus:border focus:border-purple-600 outline-none resize-none"
               ></textarea>
             </div>
 

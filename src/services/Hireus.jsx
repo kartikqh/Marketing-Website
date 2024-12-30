@@ -36,7 +36,7 @@ const Hireus = () => {
         <div
           data-aos="fade-up"
           data-aos-duration="1600"
-          className="lg:w-[60%] h-fit px-10 py-5 shadow-xl border-t-[3px] border-b-[3px] border-orange-600 bg-white"
+          className="lg:w-[60%] h-fit px-10 py-5 shadow-xl border-t-[3px] border-b-[3px] border-purple-600 bg-white"
         >
           
           <form onSubmit={handleSubmit(onSubmit)}>
@@ -49,7 +49,7 @@ const Hireus = () => {
                     type="text"
                     id="name"
                     placeholder="John Doe"
-                    className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-orange-600 outline-none"
+                    className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-purple-600 outline-none"
                   />
                 </div>
               </div>
@@ -62,7 +62,7 @@ const Hireus = () => {
                     type="email"
                     id="email"
                     placeholder="johndoe@gmail.com"
-                    className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-orange-600 outline-none"
+                    className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-purple-600 outline-none"
                   />
                 </div>
               </div>
@@ -75,7 +75,7 @@ const Hireus = () => {
                 type="text"
                 id="subject"
                 placeholder="Your subject"
-                className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-orange-600 outline-none"
+                className="w-full h-10 px-3 my-3 rounded border border-zinc-300 focus:border focus:border-purple-600 outline-none"
               />
             </div>
 
@@ -85,7 +85,7 @@ const Hireus = () => {
                 {...register("message", { required: true })}
                 id="message"
                 placeholder="Enter your message"
-                className="w-full h-60 p-3 my-3 rounded border border-zinc-300 focus:border focus:border-orange-600 outline-none resize-none"
+                className="w-full h-60 p-3 my-3 rounded border border-zinc-300 focus:border focus:border-purple-600 outline-none resize-none"
               ></textarea>
             </div>
 
@@ -96,10 +96,10 @@ const Hireus = () => {
         </div>
         
       </div>
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-orange-100 mt-20 md:mt-0">
+      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-purple-100 mt-20 md:mt-0">
         <Newsletter />
       </section>
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100">
+      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-purple-100">
         <Footer />
       </section>
     </div>

@@ -18,7 +18,7 @@ const Appproducts = ({ img }) => {
       <NavBar />
       <section
         id="about"
-        className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100"
+        className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-purple-100"
       >
         <div className="flex md:flex-row flex-col items-start justify-center gap-10">
           <div className="md:w-2/3 p-5 md:p-0">
@@ -68,10 +68,10 @@ const Appproducts = ({ img }) => {
       </section>
 
       {/* Newletter & Footer */}
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-orange-100">
+      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-purple-100">
         <Newsletter />
       </section>
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-orange-100">
+      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-purple-100">
         <Footer />
       </section>
     </div>

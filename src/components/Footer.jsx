@@ -105,19 +105,19 @@ const Footer = () => {
           valies
         </p>
         <div className="flex justify-between pr-5 mt-5">
-          <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-purple-600">
+          <div className="border border-zinc-400 p-2 rounded-full hover:border-purple-600 hover:text-purple-600">
             <IoLogoTwitter size={"26px"} />
           </div>
 
-          <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-purple-600">
+          <div className="border border-zinc-400 p-2 rounded-full hover:border-purple-600 hover:text-purple-600">
             <IoLogoFacebook size={"26px"} />
           </div>
 
-          <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-purple-600">
+          <div className="border border-zinc-400 p-2 rounded-full hover:border-purple-600 hover:text-purple-600">
             <IoLogoInstagram size={"26px"} />
           </div>
 
-          <div className="border border-zinc-400 p-2 rounded-full hover:border-orange-600 hover:text-purple-600">
+          <div className="border border-zinc-400 p-2 rounded-full hover:border-purple-600 hover:text-purple-600">
             <IoLogoLinkedin size={"26px"} />
           </div>
         </div>
