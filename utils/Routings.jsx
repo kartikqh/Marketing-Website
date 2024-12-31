@@ -1,11 +1,11 @@
-import React from "react";
+
 import { Route, Routes } from "react-router-dom";
 // import { Redirect } from "react-router-dom";
 import Home from "../src/components/Home";
 import AppDevelopment from "../src/services/AppDevelopment";
-import WebDevelopment from "../src/services/WebDevelopment";
+import WebDevelopment from "../src/services/Sem";
 import Seo from "../src/services/Seo";
-import Campaign from "../src/services/Campaign";
+import Campaign from "../src/services/Smm";
 import ProductsTemp from "../src/portfolioProducts/ProductsTemp";
 import app1 from "../src/img/portfolio/app-1.jpg";
 import app2 from "../src/img/portfolio/app-2.jpg";
@@ -23,10 +23,10 @@ const Routings = () => {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/app-development" element={<AppDevelopment />} />
-        <Route path="/web-development" element={<WebDevelopment />} />
-        <Route path="/seo-optimization" element={<Seo />} />
-        <Route path="/campagin-creation" element={<Campaign />} />
+        <Route path="/app" element={<AppDevelopment />} />
+        <Route path="/sem" element={<WebDevelopment />} />
+        <Route path="/seo" element={<Seo />} />
+        <Route path="/smm" element={<Campaign />} />
         <Route path="/hireus" element={<Hireus />} />
         <Route path="/portfolio">
           <Route path="app1" element={<ProductsTemp img={app1} />} />

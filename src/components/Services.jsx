@@ -71,7 +71,7 @@ const Services = () => {
 
         {/* Web/App Development */}
         <div className="flex justify-center">
-          <div onClick={() => navigate("/web-app-development")} className="w-full max-w-sm">
+          <div onClick={() => navigate("/app")} className="w-full max-w-sm">
             <Card
               img={<FaCode />}
               title={"Web/App Development"}

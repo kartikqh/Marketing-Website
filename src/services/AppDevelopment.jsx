@@ -1,10 +1,6 @@
-import React from "react";
+
 import Template from "./Template";
-import appImage from "../img/portfolio/app-1.jpg";
 import NavBar from "../components/NavBar";
-import Contact from "../components/Contact";
-import Newsletter from "../components/Newsletter";
-import Footer from "../components/Footer";
 
 const AppDevelopment = () => {
   return (
@@ -13,11 +9,11 @@ const AppDevelopment = () => {
         <NavBar />
       </div>
       <Template
-        title={"App Development"}
+        title={"Web/App Development"}
         desc={
-          "Lorem doloribus ex quisquam. Nesciunt laborum laboriosam consequuntur, eum id molestias in, Nesciunt laborum laboriosam consequuntur, eum id molestias in."
+          "We specialize in building cutting-edge mobile applications for iOS and Android platforms. Our expert team delivers custom solutions with intuitive UX/UI design, robust backend integration, and seamless performance. From concept to deployment, we create apps that drive business growth and user engagement."
         }
-        image={appImage}
+        image={"https://images.unsplash.com/photo-1551650975-87deedd944c3"}
       />
     </div>
   );

@@ -1,25 +1,22 @@
-import React from "react";
 import Template from "./Template";
-import image from "../img/portfolio/app-1.jpg";
 import NavBar from "../components/NavBar";
-import Newsletter from "../components/Newsletter";
-import Footer from "../components/Footer";
 
-const Seo = () => {
+const Campaign = () => {
   return (
     <div>
       <div className="secondary-font">
         <NavBar />
       </div>
       <Template
-        title={"SEO Optimization"}
+        title={"Search Engine Optimization (SEO)"}
         desc={
-          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet necessitatibus laborum voluptatem at provident atque labore porro ipsam debitis quam, ad dolorem, corrupti aut praesentium minima sit deserunt maiores fuga?"
+          "Optimize your website to rank higher on search engines and drive organic traffic. Our SEO experts develop tailored strategies to improve your site's visibility, ensuring it ranks higher in search results. We focus on keyword research, on-page optimization, link building, and content creation to enhance your online presence and drive more traffic to your site."
         }
-        image={image}
+        // Using a more relevant marketing campaign image that shows strategy and planning
+        image={"https://images.unsplash.com/photo-1552664730-d307ca884978"}
       />
     </div>
   );
 };
 
-export default Seo;
+export default Campaign;

@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import CtaButton from "./CtaButton";
-import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+
 
 const NavBar = () => {
-  const navigate = useNavigate();
+  const location = useLocation();
   const [show, setShow] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
@@ -58,7 +58,7 @@ const NavBar = () => {
           href="/#portfolio"
           className="text-gray-800 hover:text-purple-600 text-lg tracking-wide font-light"
         >
-          Portfolio
+          Platforms
         </a>
 
         <a

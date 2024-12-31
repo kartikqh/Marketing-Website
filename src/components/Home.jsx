@@ -32,10 +32,10 @@ const Home = () => {
       <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-purple-100">
         <Clients />
       </section>
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-purple-100">
+      <section id="contact" className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-purple-100">
         <Contact />
       </section>
-      <section id="contact" className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-purple-100">
+      <section  className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-purple-100">
         <Newsletter />
       </section>
       <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-purple-100">

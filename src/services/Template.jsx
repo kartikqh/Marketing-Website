@@ -1,13 +1,11 @@
-import React from "react";
 import CtaButton from "../components/CtaButton";
 import { Link } from "react-router-dom";
-import Newsletter from "../components/Newsletter";
-import Footer from "../components/Footer";
+
 
 const Template = ({ title, desc, image }) => {
   return (
     <>
-      <div className="secondary-font bg-white-900">
+      <div className="secondary-font bg-white-900 mt-16 md:mt-20">
         <div className="md:py-14 lg:px-32 border-b border-purple-100">
           <div className="flex flex-col md:flex-row gap-10 justify-center bg-[#F8F8FE] items-center md:border md:shadow-xl rounded overflow-hidden md:p-16 p-10">
             {/* Content */}
