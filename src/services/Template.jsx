@@ -1,6 +1,7 @@
 import CtaButton from "../components/CtaButton";
 import { Link } from "react-router-dom";
-
+import Footer from "../components/Footer";
+import Newsletter from "../components/Newsletter";
 
 const Template = ({ title, desc, image }) => {
   return (
@@ -29,6 +30,12 @@ const Template = ({ title, desc, image }) => {
           </div>
         </div>
       </div>
+      <section  className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-purple-100">
+        <Newsletter />
+      </section>
+      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-purple-100">
+        <Footer />
+      </section>
     </>
   );
 };

@@ -70,22 +70,22 @@ const Footer = () => {
         </h1>
         <ul>
           <li className="mb-2 arrow">
-            <Link to="/app-development" className="text-zinc-700">
+            <Link to="/smm" className="text-zinc-700">
               Social Media Marketing (SMM)
             </Link>
           </li>
           <li className="mb-2 arrow">
-          <Link to="/web-development" className="text-zinc-700">
+          <Link to="/sem" className="text-zinc-700">
               Search Engine Marketing (SEM)
             </Link>
           </li>
           <li className="mb-2 arrow">
-          <Link to="/seo-optimization" className="text-zinc-700">
+          <Link to="/app" className="text-zinc-700">
           Web/App Development
             </Link>
           </li>
           <li className="mb-2 arrow">
-          <Link to="/campagin-creation" className="text-zinc-700">
+          <Link to="/seo" className="text-zinc-700">
           SEO Optimization
             </Link>
           </li>
