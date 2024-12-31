@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import client1 from "../img/clients/client-1.png";
 import client2 from "../img/clients/client-2.png";
 import client3 from "../img/clients/client-3.png";
@@ -22,12 +22,12 @@ const Clients = () => {
 
   return (
     <div data-aos="fade-down" className="text-[#7A6960]">
-      <h1 className="text-3xl font-semibold text-center">Clients</h1>
+      <h1 className="text-3xl font-semibold text-center">Our Stack</h1>
       <div className="flex justify-center items-center mt-2">
         <div className="bg-purple-600 h-1 w-16 rounded"></div>
       </div>
       <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
-        Our Learners Work at Global Companies & Startups
+        The technologies we use to boost your website and app.
       </p>
 
       {/* Logo slider */}

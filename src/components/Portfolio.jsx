@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
-import app1 from "../img/portfolio/app-1.jpg";
-import app2 from "../img/portfolio/app-2.jpg";
-import app3 from "../img/portfolio/app-3.jpg";
-import product1 from "../img/portfolio/product-1.jpg";
-import product3 from "../img/portfolio/product-3.jpg";
-import branding1 from "../img/portfolio/branding-1.jpg";
-import book1 from "../img/portfolio/books-1.jpg";
-import book2 from "../img/portfolio/books-2.jpg";
-import book3 from "../img/portfolio/books-3.jpg";
+import { useEffect } from "react";
+import app1 from "../img/googleadds.jpg";
+import app2 from "../img/shopify.webp";
+import app3 from "../img/woocomerce.png";
+import product1 from "../img/youtube.jpg";
+import product3 from "../img/wordads.jpg";
+import branding1 from "../img/Meta.jpg";
+import book1 from "../img/analytics.png";
+import book2 from "../img/aws.png";
+import book3 from "../img/shopping.jpg";
 
 // aos
 import AOS from "aos";
@@ -26,12 +26,12 @@ const Portfolio = () => {
 
   return (
     <div className="text-[#7A6960]">
-      <h1 className="text-3xl font-semibold text-center">Portfolio</h1>
+      <h1 className="text-3xl font-semibold text-center">Platforms We Work On</h1>
       <div className="flex justify-center items-center mt-2">
         <div className="bg-purple-600 h-1 w-16 rounded"></div>
       </div>
       <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
-        Explore Our Live Courses & Make Bharat ka Career Launchpad
+        Explore The Platforms On Which We Provide Services, Helping Your Business To Grow
       </p>
 
       {/* Images */}
@@ -54,11 +54,11 @@ const Portfolio = () => {
         {/* 2nd row */}
         <div data-aos="fade-left" className=" md:flex lg:-gap-6 gap-3 hidden">
           <div onClick={() => navigate("portfolio/book1")}>
-            <PortfolioProduct image={book1} />
+            <PortfolioProduct image={app2} />
           </div>
 
           <div onClick={() => navigate("portfolio/app2")}>
-            <PortfolioProduct image={app2} />
+            <PortfolioProduct image={book2} />
           </div>
 
           <div onClick={() => navigate("portfolio/book3")}>
@@ -73,7 +73,7 @@ const Portfolio = () => {
           </div>
 
           <div onClick={() => navigate("portfolio/book2")}>
-            <PortfolioProduct image={book2} />
+            <PortfolioProduct image={book1} />
           </div>
 
           <div onClick={() => navigate("portfolio/app3")}>

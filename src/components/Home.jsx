@@ -1,15 +1,14 @@
-import React from 'react'
 import NavBar from './NavBar'
 import Hero from './Hero'
 import About from './About'
 import Services from './Services'
 import Portfolio from './Portfolio'
 import FreqAskedQues from './FreqAskedQues'
-import Team from './Team'
 import Clients from './Clients'
 import Contact from './Contact'
 import Newsletter from './Newsletter'
 import Footer from './Footer'
+import FloatingActions from './FloatingActions'
 
 const Home = () => {
   return (
@@ -31,20 +30,18 @@ const Home = () => {
         <FreqAskedQues />
       </section>
       <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-purple-100">
-        <Team />
-      </section>
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-purple-100">
         <Clients />
       </section>
-      <section id="contact" className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-purple-100">
+      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-purple-100">
         <Contact />
       </section>
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-purple-100">
+      <section id="contact" className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-purple-100">
         <Newsletter />
       </section>
-      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden border-b border-purple-100">
+      <section className="w-full max-h-fit py-16 lg:px-32 overflow-hidden bg-[#F8F8FE] border-b border-purple-100">
         <Footer />
       </section>
+      <FloatingActions />
     </div>
   )
 }

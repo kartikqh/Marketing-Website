@@ -1,4 +1,4 @@
-import React, {useEffect } from "react";
+import  {useEffect } from "react";
 import { IoLogoTwitter } from "react-icons/io";
 import { IoLogoFacebook } from "react-icons/io5";
 import { IoLogoInstagram } from "react-icons/io5";
@@ -21,7 +21,7 @@ const Footer = () => {
     <div className="md:grid grid-cols-4 p-5 md:p-0">
       <div data-aos="fade-right" >
         <h1 className="text-xl font-light mb-3">Onkar Digital Services</h1>
-        <p className="mb-1">51 Saraswati Vihar  Raipur road </p>
+        <p className="mb-1">51 Saraswati Vihar  Raipur road</p>
         <p className="mb-5">Dehrdaun, UK(In) 248001</p>
 
         <div>
@@ -46,12 +46,12 @@ const Footer = () => {
             </a>
           </li>
           <li className="mb-2 arrow">
-            <a href="#" className="text-zinc-700">
+            <a href="#about" className="text-zinc-700">
               About Us
             </a>
           </li>
           <li className="mb-2 arrow">
-            <a href="#" className="text-zinc-700">
+            <a href="#services" className="text-zinc-700">
               Service
             </a>
           </li>
@@ -71,22 +71,22 @@ const Footer = () => {
         <ul>
           <li className="mb-2 arrow">
             <Link to="/app-development" className="text-zinc-700">
-              App Development
+              Social Media Marketing (SMM)
             </Link>
           </li>
           <li className="mb-2 arrow">
           <Link to="/web-development" className="text-zinc-700">
-              Web Development
+              Search Engine Marketing (SEM)
             </Link>
           </li>
           <li className="mb-2 arrow">
           <Link to="/seo-optimization" className="text-zinc-700">
-          SEO Optimization
+          Web/App Development
             </Link>
           </li>
           <li className="mb-2 arrow">
           <Link to="/campagin-creation" className="text-zinc-700">
-          Campagin Creation
+          SEO Optimization
             </Link>
           </li>
           <li className="mb-2 arrow">
@@ -101,8 +101,7 @@ const Footer = () => {
       <div data-aos="fade-right" data-aos-delay="700" className="mt-10 md:mt-0">
         <h1 className="text-[#7A6960] font-medium text-lg mb-2">Follow Us</h1>
         <p className="text-sm">
-          Cras fermentum odio eu feugiat lide par naso tierra videa magna derita
-          valies
+          Follow us on our social media platforms to stay updated on our latest projects and services.
         </p>
         <div className="flex justify-between pr-5 mt-5">
           <div className="border border-zinc-400 p-2 rounded-full hover:border-purple-600 hover:text-purple-600">

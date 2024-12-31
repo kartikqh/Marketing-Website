@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import CtaButton from "./CtaButton";
 import { useNavigate } from "react-router-dom";
@@ -6,13 +6,27 @@ import { useNavigate } from "react-router-dom";
 const NavBar = () => {
   const navigate = useNavigate();
   const [show, setShow] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const clickHandler = () => {
     setShow(!show);
   };
 
   return (
-    <div className="w-full xl:h-24 lg:h-20 h-16 flex flex-row items-center justify-between lg:px-32 sm:px-20 px-10 shadow-lg relative secondary-font">
+    <div className={`w-full xl:h-24 lg:h-20 h-16 flex flex-row items-center justify-between lg:px-32 sm:px-20 px-10 fixed top-0 left-0 z-50 secondary-font transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
       {/* logo */}
       <a
         href="/"
@@ -24,32 +38,32 @@ const NavBar = () => {
       <div className="lg:flex items-center justify-between lg:gap-14 hidden">
         <a
           href="/"
-          className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
+          className="text-gray-800 hover:text-purple-600 text-lg tracking-wide font-light"
         >
           Home
         </a>
         <a
           href="/#about"
-          className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
+          className="text-gray-800 hover:text-purple-600 text-lg tracking-wide font-light"
         >
           About
         </a>
         <a
           href="/#services"
-          className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
+          className="text-gray-800 hover:text-purple-600 text-lg tracking-wide font-light"
         >
           Services
         </a>
         <a
           href="/#portfolio"
-          className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
+          className="text-gray-800 hover:text-purple-600 text-lg tracking-wide font-light"
         >
           Portfolio
         </a>
 
         <a
           href="/#contact"
-          className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
+          className="text-gray-800 hover:text-purple-600 text-lg tracking-wide font-light"
         >
           Contact
         </a>
@@ -72,25 +86,25 @@ const NavBar = () => {
         <div className="absolute z-20 top-[70px] flex flex-col gap-4 text-center w-full left-0 p-5 lg:hidden shadow-xl bg-white transition-all duration-300">
           <a
             href="/"
-            className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
+            className="text-gray-800 hover:text-purple-600 text-lg tracking-wide font-light"
           >
             Home
           </a>
           <a
             href="/#about"
-            className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
+            className="text-gray-800 hover:text-purple-600 text-lg tracking-wide font-light"
           >
             About
           </a>
           <a
             href="/#services"
-            className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
+            className="text-gray-800 hover:text-purple-600 text-lg tracking-wide font-light"
           >
             Services
           </a>
           <a
             href="/#contact"
-            className="text-gray-800 hover:text-[#EE7540] text-lg tracking-wide font-light"
+            className="text-gray-800 hover:text-purple-600 text-lg tracking-wide font-light"
           >
             Contact
           </a>
