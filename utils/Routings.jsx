@@ -1,4 +1,3 @@
-
 import { Route, Routes } from "react-router-dom";
 // import { Redirect } from "react-router-dom";
 import Home from "../src/components/Home";
@@ -17,7 +16,7 @@ import book1 from "../src/img/portfolio/books-1.jpg";
 import book2 from "../src/img/portfolio/books-2.jpg";
 import book3 from "../src/img/portfolio/books-3.jpg";
 import Hireus from "../src/services/Hireus";
-
+import ComingSoon from "../src/services/ComingSoon";  
 const Routings = () => {
   return (
     <div>
@@ -28,6 +27,7 @@ const Routings = () => {
         <Route path="/seo" element={<Seo />} />
         <Route path="/smm" element={<Campaign />} />
         <Route path="/hireus" element={<Hireus />} />
+        <Route path="/coming-soon" element={<ComingSoon />} />
         <Route path="/portfolio">
           <Route path="app1" element={<ProductsTemp img={app1} />} />
           <Route path="product1" element={<ProductsTemp img={product1} />} />

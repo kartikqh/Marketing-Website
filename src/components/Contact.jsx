@@ -87,7 +87,7 @@ const Contact = () => {
               <h2 className="lg:text-xl text-[#7A6960] font-semibold">
                 Email Us
               </h2>
-              <p className="text-sm text-slate-800">info@example.com</p>
+              <p className="text-sm text-slate-800">oberoi181994@gmail.com</p>
             </div>
           </div>
 

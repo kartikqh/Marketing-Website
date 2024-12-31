@@ -1,11 +1,11 @@
 import  { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import CtaButton from "./CtaButton";
-import { useLocation } from "react-router-dom";
+//import { useLocation } from "react-router-dom";
 
 
 const NavBar = () => {
-  const location = useLocation();
+  //const location = useLocation();
   const [show, setShow] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -101,6 +101,12 @@ const NavBar = () => {
             className="text-gray-800 hover:text-purple-600 text-lg tracking-wide font-light"
           >
             Services
+          </a>
+          <a
+            href="/#portfolio"
+            className="text-gray-800 hover:text-purple-600 text-lg tracking-wide font-light"
+          >
+            Platforms
           </a>
           <a
             href="/#contact"

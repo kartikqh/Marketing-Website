@@ -38,45 +38,45 @@ const Portfolio = () => {
       <div className="flex flex-col justify-center items-center lg:-gap-6 gap-3 p-5 mb-10">
         {/* 1st row */}
         <div data-aos="fade-right" className="flex flex-col md:flex-row lg:-gap-6 gap-3">
-          <div onClick={() => navigate("portfolio/app1")}>
+          <div onClick={() => navigate("/coming-soon")}>
             <PortfolioProduct image={app1} />
           </div>
 
-          <div onClick={() => navigate("portfolio/product1")}>
+          <div onClick={() => navigate("/coming-soon")}>
             <PortfolioProduct image={product1} />
           </div>
 
-          <div onClick={() => navigate("portfolio/brand1")}>
+          <div onClick={() => navigate("/coming-soon")}>
             <PortfolioProduct image={branding1} />
           </div>
         </div>
 
         {/* 2nd row */}
         <div data-aos="fade-left" className=" md:flex lg:-gap-6 gap-3 hidden">
-          <div onClick={() => navigate("portfolio/book1")}>
+          <div onClick={() => navigate("/coming-soon")}>
             <PortfolioProduct image={app2} />
           </div>
 
-          <div onClick={() => navigate("portfolio/app2")}>
+          <div onClick={() => navigate("/coming-soon")}>
             <PortfolioProduct image={book2} />
           </div>
 
-          <div onClick={() => navigate("portfolio/book3")}>
+          <div onClick={() => navigate("/coming-soon")}>
             <PortfolioProduct image={book3} />
           </div>
         </div>
 
         {/* 3rd row */}
         <div data-aos="fade-up" className="lg:-gap-6 gap-3 hidden md:flex">
-        <div onClick={() => navigate("portfolio/product3")}>
+        <div onClick={() => navigate("/coming-soon")}>
             <PortfolioProduct image={product3} />
           </div>
 
-          <div onClick={() => navigate("portfolio/book2")}>
+          <div onClick={() => navigate("/coming-soon")}>
             <PortfolioProduct image={book1} />
           </div>
 
-          <div onClick={() => navigate("portfolio/app3")}>
+          <div onClick={() => navigate("/coming-soon")}>
             <PortfolioProduct image={app3} />
           </div>
         </div>
