@@ -28,7 +28,7 @@ const Hireus = () => {
   }, []);
 
   return (
-    <div className="">
+    <div className=" secondary-font">
       <NavBar />
       <div className="mt-40 md:mt-30">
         <h1 className="text-center text-[#7A6960] md:text-5xl text-3xl font-semibold my-10 p-5 md:p-0">Share your idea & we will <br /> turn it into reality!</h1>

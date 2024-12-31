@@ -87,7 +87,7 @@ const Hero = () => {
           </button>
           {/* <div
             onClick={() => videoStartHandler()}
-            className="shadow shadow-zinc-300 hover:shadow-orange-600 hover:shadow px-4 py-2 rounded-3xl"
+            className="shadow shadow-zinc-300 hover:shadow-blue-600 hover:shadow px-4 py-2 rounded-3xl"
           >
             <VideoBtn name={"Watch Video"} />
           </div> */}

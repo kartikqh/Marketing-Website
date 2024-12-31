@@ -5,8 +5,8 @@ import NavBar from "../components/NavBar";
 const AppDevelopment = () => {
   return (
     <div>
-      <div className="secondary-font">
-        <NavBar />
+    <div className="container  secondary-font">
+    <NavBar />
       </div>
       <Template
         title={"Web/App Development"}

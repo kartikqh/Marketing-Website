@@ -47,7 +47,7 @@ const Newsletter = () => {
           placeholder="email@gmail.com"
           className="md:w-1/2 w-11/12 px-6 py-3 rounded-3xl outline-none border border-zinc-300 focus:border-purple-600"
         />
-        <button className="px-4 py-[10px] bg-purple-600 hover:bg-purple-500 rounded-3xl text-slate-50 text-lg hover:shadow hover:shadow-orange-500 transition-all duration-300">
+        <button className="px-4 py-[10px] bg-purple-600 hover:bg-purple-500 rounded-3xl text-slate-50 text-lg hover:shadow hover:shadow-blue-500 transition-all duration-300">
           Subscribe
         </button>
       </form>

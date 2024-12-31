@@ -4,8 +4,8 @@ import NavBar from "../components/NavBar";
 const Campaign = () => {
   return (
     <div>
-      <div className="secondary-font">
-        <NavBar />
+          <div className="container secondary-font">
+          <NavBar />
       </div>
       <Template
         title={"Search Engine Optimization (SEO)"}
