@@ -14,74 +14,116 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import PortfolioProduct from "./PortfolioProduct";
 import { useNavigate } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Portfolio = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
+      duration: 1200,
     });
   }, []);
 
   const navigate = useNavigate();
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 20, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        stiffness: 100,
+        damping: 12
+      }
+    }
+  };
+
   return (
-    <div className="text-[#7A6960]">
-      <h1 className="text-3xl font-semibold text-center">Platforms We Work On</h1>
-      <div className="flex justify-center items-center mt-2">
+    <motion.div 
+      className="text-[#7A6960]"
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
+      <motion.h1 
+        className="text-3xl font-semibold text-center"
+        variants={itemVariants}
+      >
+        Platforms We Work On
+      </motion.h1>
+      <motion.div 
+        className="flex justify-center items-center mt-2"
+        variants={itemVariants}
+      >
         <div className="bg-purple-600 h-1 w-16 rounded"></div>
-      </div>
-      <p className="text-gray-700 text-center mt-7 mb-10 text-lg">
+      </motion.div>
+      <motion.p 
+        className="text-gray-700 text-center mt-7 mb-10 text-lg"
+        variants={itemVariants}
+      >
         Explore The Platforms On Which We Provide Services, Helping Your Business To Grow
-      </p>
+      </motion.p>
 
       {/* Images */}
-      <div className="flex flex-col justify-center items-center lg:-gap-6 gap-3 p-5 mb-10">
-        {/* 1st row */}
-        <div data-aos="fade-right" className="flex flex-col md:flex-row lg:-gap-6 gap-3">
-          <div onClick={() => navigate("/coming-soon")}>
-            <PortfolioProduct image={app1} />
-          </div>
+      <AnimatePresence>
+        <motion.div className="flex flex-col justify-center items-center lg:-gap-6 gap-3 p-5 mb-10">
+          {/* Row 1 */}
+          <motion.div className="flex flex-col md:flex-row lg:-gap-6 gap-3">
+            {[app1, product1, branding1].map((image, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => navigate("/coming-soon")}
+              >
+                <PortfolioProduct image={image} />
+              </motion.div>
+            ))}
+          </motion.div>
 
-          <div onClick={() => navigate("/coming-soon")}>
-            <PortfolioProduct image={product1} />
-          </div>
+          {/* Row 2 */}
+          <motion.div className="flex flex-col md:flex-row lg:-gap-6 gap-3">
+            {[app2, book2, book3].map((image, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => navigate("/coming-soon")}
+              >
+                <PortfolioProduct image={image} />
+              </motion.div>
+            ))}
+          </motion.div>
 
-          <div onClick={() => navigate("/coming-soon")}>
-            <PortfolioProduct image={branding1} />
-          </div>
-        </div>
-
-        {/* 2nd row */}
-        <div data-aos="fade-left" className=" md:flex lg:-gap-6 gap-3 hidden">
-          <div onClick={() => navigate("/coming-soon")}>
-            <PortfolioProduct image={app2} />
-          </div>
-
-          <div onClick={() => navigate("/coming-soon")}>
-            <PortfolioProduct image={book2} />
-          </div>
-
-          <div onClick={() => navigate("/coming-soon")}>
-            <PortfolioProduct image={book3} />
-          </div>
-        </div>
-
-        {/* 3rd row */}
-        <div data-aos="fade-up" className="lg:-gap-6 gap-3 hidden md:flex">
-        <div onClick={() => navigate("/coming-soon")}>
-            <PortfolioProduct image={product3} />
-          </div>
-
-          <div onClick={() => navigate("/coming-soon")}>
-            <PortfolioProduct image={book1} />
-          </div>
-
-          <div onClick={() => navigate("/coming-soon")}>
-            <PortfolioProduct image={app3} />
-          </div>
-        </div>
-      </div>
-    </div>
+          {/* Row 3 */}
+          <motion.div className="flex flex-col md:flex-row lg:-gap-6 gap-3">
+            {[product3, book1, app3].map((image, index) => (
+              <motion.div
+                key={index}
+                variants={itemVariants}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => navigate("/coming-soon")}
+              >
+                <PortfolioProduct image={image} />
+              </motion.div>
+            ))}
+          </motion.div>
+        </motion.div>
+      </AnimatePresence>
+    </motion.div>
   );
 };
 
