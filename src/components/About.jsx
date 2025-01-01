@@ -17,6 +17,10 @@ const About = () => {
 
   return (
     <div className="relative lg:mx-32">
+      {/* Meta description for SEO */}
+      <meta name="description" content="Leading digital marketing company in Dehradun & top digital marketing company near Mussoorie. We are a full-service digital marketing and advertising agency offering SEO, SEM, SMM, web development services." />
+      <meta name="keywords" content="digital marketing, digital and marketing, digital marketing agency, agency marketing digital, marketing agency digital, digital agency marketing, digital marketing and advertising agency, digital marketing ad agency, digital marketing services, digital marketing company, digital marketing firms, marketing agency, advertising agency, top digital marketing company in dehradun, leading digital marketing company in Dehradun, top digital marketing company near mussoorie" />
+      
       <h1
         data-aos="fade-down"
         className="text-3xl font-semibold text-center text-[#7A6960]"
@@ -42,7 +46,7 @@ const About = () => {
             <p className="text-lg mt-5 text-gray-600 primary-font">
               At Onkar Digital Services, we help startups and small-to-medium
               businesses thrive online. Our expertise in SEO, SEM, SMM, and web
-              development drives measurable results for your brand’s digital
+              development drives measurable results for your brand&apos;s digital
               success.
             </p>
           </div>
@@ -96,7 +100,7 @@ const About = () => {
             data-aos="zoom-in"
             className="text-lg mt-5 text-gray-600 primary-font"
           >
-            Partner with us to unlock your brand’s full potential. Together, we
+            Partner with us to unlock your brand&apos;s full potential. Together, we
             build strategies that not only engage your audience but also drive
             tangible growth.
           </p>
