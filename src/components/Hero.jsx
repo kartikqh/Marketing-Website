@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { TypeAnimation } from 'react-type-animation';
 import CtaButton from "./CtaButton";
 import img from "../img/logo.png";
 
@@ -59,7 +60,16 @@ const Hero = () => {
         className="lg:w-1/2 w-full md:w-3/4 px-10 md:p-0"
       >
         <h1 className="text-[#7A6960] md:text-5xl text-3xl font-semibold">
-         Empowering Your Digital Growth – One Click at a Time!
+         <TypeAnimation
+           sequence={[
+             'Empowering Your Digital Growth – One Click at a Time!',
+             1000,
+           ]}
+           wrapper="span"
+           speed={10}
+           repeat={Infinity}
+           className="text-[#7A6960] md:text-5xl text-3xl font-semibold"
+         />
         </h1>
         <p className="text-xl mt-5 text-gray-600 primary-font">
         At Onkar Digital Services, we specialize in transforming ideas into impactful online experiences. As Dehradun&apos;s trusted digital marketing partner, we cater to startups and small-to-mid entrepreneurial businesses, offering tailored solutions in SEO, SEM, SMM, and Web Development.        </p>
