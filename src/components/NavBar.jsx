@@ -34,9 +34,11 @@ const NavBar = () => {
       {/* logo */}
       <a
         href="/"
-        className="lg:text-3xl text-2xl tracking-wide font-light text-[#7A6960] hover:scale-105 transition-transform duration-300"
+        className="lg:text-3xl text-2xl tracking-wide font-light text-[#7A6960] transition-transform duration-300 relative group"
       >
-        Onkar Digital Services
+        <span className="relative z-10 text-3xl">Onkar Digital Services</span>
+        <div className="absolute inset-0 w-0 bg-gradient-to-r from-purple via-white to-transparent animate-shine"></div>
+        <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg opacity-20 blur-xl"></div>
       </a>
       {/* menu */}
       <div className="lg:flex items-center justify-between lg:gap-14 hidden">
