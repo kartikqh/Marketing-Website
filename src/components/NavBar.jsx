@@ -37,7 +37,7 @@ const NavBar = () => {
         className="lg:text-3xl text-2xl tracking-wide font-light text-[#7A6960] transition-transform duration-300 relative group"
       >
         <span className="relative z-10">Onkar Digital Services</span>
-        <div className="absolute inset-0 w-0 bg-gradient-to-r from-transparent via-white to-transparent animate-shine"></div>
+      
         <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-blue-600 rounded-lg opacity-20 blur-xl"></div>
       </a>
       {/* menu */}
