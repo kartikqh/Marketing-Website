@@ -14,11 +14,118 @@ import { toast } from "react-toastify";
 const Contact = () => {
   const { register, handleSubmit } = useForm();
 
-  const onSubmit = (data, e) => {
-    console.log(data);
-    toast.success("Message sent Successfully");
-    e.target.reset();
+  const onSubmit = async (data, e) => {
+    try {
+      console.log(import.meta.env.VITE_REACT_APP_BREVO_API_KEY);
+      // Email template for site owner
+      const ownerEmailContent = `
+        <html>
+          <head>
+            <style>
+              .container { font-family: Arial, sans-serif; padding: 20px; }
+              .header { color: #7A6960; font-size: 24px; margin-bottom: 20px; }
+              .details { background: #f5f5f5; padding: 15px; border-radius: 5px; }
+              .label { font-weight: bold; color: #666; }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="header">Onkar Digital Service: New Enquiry Received</div>
+              <div class="details">
+                <p><span class="label">Name:</span> ${data.name}</p>
+                <p><span class="label">Email:</span> ${data.email}</p>
+                <p><span class="label">Subject:</span> ${data.subject}</p>
+                <p><span class="label">Message:</span> ${data.message}</p>
+              </div>
+            </div>
+          </body>
+        </html>
+      `;
+
+      // Email template for customer
+      const customerEmailContent = `
+        <html>
+          <head>
+            <style>
+              .container { font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: 0 auto; }
+              .header { color: #CF58B2; font-size: 24px; margin-bottom: 20px; text-align: center; }
+              .content { line-height: 1.6; color: #444; }
+              .footer { margin-top: 30px; text-align: center; color: #666; font-size: 14px; }
+            </style>
+          </head>
+          <body>
+            <div class="container">
+              <div class="header">Thank You for Contacting Us!</div>
+              <div class="content">
+                <p>Dear ${data.name},</p>
+                <p>We have received your enquiry. Our team will review your message and get back to you shortly.</p>
+                <p>Your enquiry details have been recorded with the following information:</p>
+                <ul>
+                  <li>Subject: ${data.subject}</li>
+                  <li>Message: ${data.message}</li>
+                </ul>
+                <p>We appreciate your interest and aim to respond within 24-48 business hours.</p>
+              </div>
+              <div class="footer">
+                <p>Best Regards,<br/>Onkar Digital Service Team</p>
+              </div>
+            </div>
+          </body>
+        </html>
+      `;
+
+      // Send email to owner
+      await fetch('https://api.brevo.com/v3/smtp/email', {
+        method: 'POST',
+        headers: {
+          'accept': 'application/json',
+          'api-key': import.meta.env.VITE_REACT_APP_BREVO_API_KEY,
+          'content-type': 'application/json'
+        },
+        body: JSON.stringify({
+          sender: {
+            name: "Onkar Digital Service",
+            email: "onkardigitalservices@gmail.com"
+          },
+          to: [{
+            email: "oberoi181994@gmail.com",
+            name: "Site Owner"
+          }],
+          subject: `New Enquiry: ${data.subject}`,
+          htmlContent: ownerEmailContent
+        })
+      });
+
+      // Send acknowledgement email to customer
+      await fetch('https://api.brevo.com/v3/smtp/email', {
+        method: 'POST',
+        headers: {
+          'accept': 'application/json',
+          'api-key': import.meta.env.VITE_REACT_APP_BREVO_API_KEY,
+          'content-type': 'application/json'
+        },
+        body: JSON.stringify({
+          sender: {
+            name: "Onkar Digital Service",
+            email:  "onkardigitalservices@gmail.com"
+          },
+          to: [{
+            email: data.email,
+            name: data.name
+          }],
+          subject: "Thank you for contacting Onkar Digital Service",
+          htmlContent: customerEmailContent
+        })
+      });
+
+      toast.success("Message sent successfully");
+      e.target.reset();
+    } catch (error) {
+      console.error("Error sending emails:", error);
+      toast.error("Failed to send message. Please try again later.");
+    }
   };
+
 
   useEffect(() => {
     AOS.init({
@@ -60,7 +167,7 @@ const Contact = () => {
                 Address
               </h2>
               <p className="text-sm text-slate-800">
-                51 Saraswati Vihar  Raipur road ,Dehrdaun, UK(In) 248001
+                51 Saraswati Vihar  Raipur road,Dehrdaun, UK(In) 248001
               </p>
             </div>
           </div>
@@ -101,7 +208,7 @@ const Contact = () => {
               height="100%"
               src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3080.8473589649675!2d78.06152887556436!3d30.319918774786032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDE5JzExLjciTiA3OMKwMDMnNTAuOCJF!5e1!3m2!1sen!2sin!4v1734350556142!5m2!1sen!2sin" 
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>
