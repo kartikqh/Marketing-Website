@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 // import { Redirect } from "react-router-dom";
 import Home from "../src/components/Home";
 import AppDevelopment from "../src/services/AppDevelopment";
@@ -17,6 +17,7 @@ import book2 from "../src/img/portfolio/books-2.jpg";
 import book3 from "../src/img/portfolio/books-3.jpg";
 import Hireus from "../src/services/Hireus";
 import ComingSoon from "../src/services/ComingSoon";  
+
 const Routings = () => {
   return (
     <div>
@@ -39,6 +40,7 @@ const Routings = () => {
           <Route path="book2" element={<ProductsTemp img={book2} />} />
           <Route path="app3" element={<ProductsTemp img={app3} />} />
         </Route>
+        <Route path="*" element={<Navigate to="/hireus" replace />} />
       </Routes>
     </div>
   );
