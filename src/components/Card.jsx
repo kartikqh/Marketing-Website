@@ -12,7 +12,7 @@ const Card = ({ title, desc, img}) => {
         <h1 className="lg:text-2xl text-lg font-semibold mt-3 mb-5">{title}</h1>
         <p className="lg:text-base text-sm text-zinc-700">{desc}</p>
       </div>
-    // </a>
+    // </a> added key
   );
 };
 
