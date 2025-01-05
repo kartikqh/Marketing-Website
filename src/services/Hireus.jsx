@@ -16,7 +16,7 @@ const Hireus = () => {
 
   const onSubmit = async (data, e) => {
     try {
-      console.log(import.meta.env.VITE_REACT_APP_BREVO_API_KEY);
+
       // Email template for site owner
       const ownerEmailContent = `
         <html>

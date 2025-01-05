@@ -13,7 +13,7 @@ const FloatingActions = () => {
     <div className="fixed right-4 bottom-4 z-50 flex flex-col gap-3 md:right-6 md:bottom-8">
       {/* Hire Us Button */}
       <a 
-        href="#contact" 
+        href="/hireus" 
         className="bg-purple-600 text-white rounded-full px-4 py-2 flex items-center gap-2 shadow-lg hover:bg-purple-700 transition-all duration-300 text-sm md:text-base"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
