@@ -1,5 +1,5 @@
 
-
+import { Link } from "react-router-dom";
 const FloatingActions = () => {
   const handleWhatsApp = () => {
     window.open('https://wa.me/+918800644378', '_blank'); // Replace with your number
@@ -12,15 +12,14 @@ const FloatingActions = () => {
   return (
     <div className="fixed right-4 bottom-4 z-50 flex flex-col gap-3 md:right-6 md:bottom-8">
       {/* Hire Us Button */}
-      <a 
-        href="/hireus" 
+      <Link to="/hireus" 
         className="bg-purple-600 text-white rounded-full px-4 py-2 flex items-center gap-2 shadow-lg hover:bg-purple-700 transition-all duration-300 text-sm md:text-base"
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
         </svg>
         Hire Us
-      </a>
+      </Link>
 
       {/* WhatsApp Button */}
       <button 
