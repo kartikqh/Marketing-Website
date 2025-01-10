@@ -1,0 +1,14 @@
+# Allow all web crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://onkardigital.com/sitemap.xml
+
+# Disallow specific paths (uncomment if needed)
+# Disallow: /admin/
+# Disallow: /private/
+# Disallow: /api/
+
+# Crawl-delay (optional, in seconds)
+Crawl-delay: 10 
