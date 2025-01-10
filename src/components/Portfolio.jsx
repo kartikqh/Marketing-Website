@@ -84,47 +84,86 @@ const Portfolio = () => {
         <motion.div className="flex flex-col justify-center items-center lg:-gap-6 gap-3 p-5 mb-10">
           {/* Row 1 */}
           <motion.div className="flex flex-col md:flex-row lg:-gap-6 gap-3">
-            {[app1, product1, branding1].map((image, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => navigate("/coming-soon")}
-              >
-                <PortfolioProduct image={image} />
-              </motion.div>
-            ))}
+            <motion.div
+              variants={itemVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate("/google-ads")}
+            >
+              <PortfolioProduct image={app1} />
+            </motion.div>
+            <motion.div
+              variants={itemVariants} 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate("/youtube-ads")}
+            >
+              <PortfolioProduct image={product1} />
+            </motion.div>
+            <motion.div
+              variants={itemVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate("/meta-ads")}
+            >
+              <PortfolioProduct image={branding1} />
+            </motion.div>
           </motion.div>
 
           {/* Row 2 */}
           <motion.div className="flex flex-col md:flex-row lg:-gap-6 gap-3">
-            {[app2, book2, book3].map((image, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => navigate("/coming-soon")}
-              >
-                <PortfolioProduct image={image} />
-              </motion.div>
-            ))}
+            <motion.div
+              variants={itemVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate("/shopify-ads")}
+            >
+              <PortfolioProduct image={app2} />
+            </motion.div>
+            <motion.div
+              variants={itemVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate("/aws-cloud")}
+            >
+              <PortfolioProduct image={book2} />
+            </motion.div>
+            <motion.div
+              variants={itemVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate("/google-shopping")}
+            >
+              <PortfolioProduct image={book3} />
+            </motion.div>
           </motion.div>
 
           {/* Row 3 */}
           <motion.div className="flex flex-col md:flex-row lg:-gap-6 gap-3">
-            {[product3, book1, app3].map((image, index) => (
-              <motion.div
-                key={index}
-                variants={itemVariants}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => navigate("/coming-soon")}
-              >
-                <PortfolioProduct image={image} />
-              </motion.div>
-            ))}
+            <motion.div
+              variants={itemVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate("/google-business")}
+            >
+              <PortfolioProduct image={product3} />
+            </motion.div>
+            <motion.div
+              variants={itemVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate("/google-analytics")}
+            >
+              <PortfolioProduct image={book1} />
+            </motion.div>
+            <motion.div
+              variants={itemVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate("/display-advertising")}
+            >
+              <PortfolioProduct image={app3} />
+            </motion.div>
           </motion.div>
         </motion.div>
       </AnimatePresence>

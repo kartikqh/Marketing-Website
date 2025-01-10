@@ -29,7 +29,7 @@ const Footer = () => {
             Phone: <span className="font-normal ml-1">+91 88006 44378</span>
           </p>
           <p className="font-medium">
-            Email: <span className="font-normal ml-1">oberoi181994@gmail.com</span>
+            Email: <span className="font-normal ml-1 text-sm">onkardigitalservices@gmail.com</span>
           </p>
         </div>
       </div>
@@ -41,22 +41,22 @@ const Footer = () => {
         </h1>
         <ul>
           <li className="mb-2 arrow">
-            <a href="#" className="text-zinc-700">
+            <a href="/" className="text-zinc-700">
               Home
             </a>
           </li>
           <li className="mb-2 arrow">
-            <a href="#about" className="text-zinc-700">
+            <a href="/#about" className="text-zinc-700">
               About Us
             </a>
           </li>
           <li className="mb-2 arrow">
-            <a href="#services" className="text-zinc-700">
+            <a href="/#services" className="text-zinc-700">
               Service
             </a>
           </li>
           <li className="mb-2 arrow">
-            <a href="#" className="text-zinc-700">
+            <a href="/terms-of-service" className="text-zinc-700">
               Terms Of Service
             </a>
           </li>

@@ -89,7 +89,7 @@ const Hireus = () => {
             email: "onkardigitalservices@gmail.com"
           },
           to: [{
-            email: "oberoi181994@gmail.com",
+            email: "onkardigitalservices@gmail.com",
             name: "Site Owner"
           }],
           subject: `New Service Request: ${data.service}`,

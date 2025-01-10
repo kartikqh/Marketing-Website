@@ -88,7 +88,7 @@ const Contact = () => {
             email: "onkardigitalservices@gmail.com"
           },
           to: [{
-            email: "oberoi181994@gmail.com",
+            email: "onkardigitalservices@gmail.com",
             name: "Site Owner"
           }],
           subject: `New Enquiry: ${data.subject}`,
@@ -198,7 +198,7 @@ const Contact = () => {
               <h2 className="lg:text-xl text-[#7A6960] font-semibold">
                 Email Us
               </h2>
-              <p className="text-sm text-slate-800">oberoi181994@gmail.com</p>
+              <p className="text-sm text-slate-800">onkardigitalservices@gmail.com</p>
             </div>
           </div>
 

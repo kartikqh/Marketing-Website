@@ -1,5 +1,6 @@
 import { Route, Routes, Navigate } from "react-router-dom";
 // import { Redirect } from "react-router-dom";
+import TermsOfService from "../src/pages/TermsOfService";
 import Home from "../src/components/Home";
 import AppDevelopment from "../src/services/AppDevelopment";
 import WebDevelopment from "../src/services/Sem";
@@ -17,6 +18,16 @@ import book2 from "../src/img/portfolio/books-2.jpg";
 import book3 from "../src/img/portfolio/books-3.jpg";
 import Hireus from "../src/services/Hireus";
 import ComingSoon from "../src/services/ComingSoon";  
+// Import new components
+import GoogleAds from "../src/services/GoogleAds";
+import YoutubeAds from "../src/services/YoutubeAds";
+import MetaAds from "../src/services/MetaAds";
+import ShopifyAds from "../src/services/ShopifyAds";
+import AwsCloud from "../src/services/AwsCloud";
+import GoogleShoppingAds from "../src/services/GoogleShoppingAds";
+import GoogleBusiness from "../src/services/GoogleBusiness";
+import GoogleAnalytics from "../src/services/GoogleAnalytics";
+import DisplayAdvertising from "../src/services/DisplayAdvertising";
 
 const Routings = () => {
   return (
@@ -29,6 +40,17 @@ const Routings = () => {
         <Route path="/smm" element={<Campaign />} />
         <Route path="/hireus" element={<Hireus />} />
         <Route path="/coming-soon" element={<ComingSoon />} />
+      {/* New routes for advertising services */}
+        <Route path="/google-ads" element={<GoogleAds />} />
+        <Route path="/youtube-ads" element={<YoutubeAds />} />
+        <Route path="/meta-ads" element={<MetaAds />} />
+        <Route path="/shopify-ads" element={<ShopifyAds />} />
+        <Route path="/aws-cloud" element={<AwsCloud />} />
+        <Route path="/google-shopping" element={<GoogleShoppingAds />} />
+        <Route path="/google-business" element={<GoogleBusiness />} />
+        <Route path="/google-analytics" element={<GoogleAnalytics />} />
+        <Route path="/display-advertising" element={<DisplayAdvertising />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/portfolio">
           <Route path="app1" element={<ProductsTemp img={app1} />} />
           <Route path="product1" element={<ProductsTemp img={product1} />} />
