@@ -56,3 +56,10 @@ body::-webkit-scrollbar-thumb {
   left: 45%;
   top: 45%;
 }
+
+/* Add text justification for paragraphs on mobile */
+@media screen and (max-width: 768px) {
+  p {
+    text-align: justify;
+  }
+}
