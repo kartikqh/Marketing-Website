@@ -103,10 +103,10 @@ const Footer = () => {
         <p className="text-sm">
           Follow us on our social media platforms to stay updated on our latest projects and services.
         </p>
-        <div className="flex justify-between pr-5 mt-5">
-          <div className="border border-zinc-400 p-2 rounded-full hover:border-purple-600 hover:text-purple-600">
+        <div className="flex justify-evenly pr-5 mt-5">
+          {/* <div className="border border-zinc-400 p-2 rounded-full hover:border-purple-600 hover:text-purple-600">
             <IoLogoTwitter size={"26px"} />
-          </div>
+          </div> */}
 
           <div className="border border-zinc-400 p-2 rounded-full hover:border-purple-600 hover:text-purple-600">
             <IoLogoFacebook size={"26px"} />
@@ -116,9 +116,9 @@ const Footer = () => {
             <IoLogoInstagram size={"26px"} />
           </div>
 
-          <div className="border border-zinc-400 p-2 rounded-full hover:border-purple-600 hover:text-purple-600">
+          {/* <div className="border border-zinc-400 p-2 rounded-full hover:border-purple-600 hover:text-purple-600">
             <IoLogoLinkedin size={"26px"} />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
