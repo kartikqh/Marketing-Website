@@ -60,6 +60,11 @@ const Footer = () => {
               Terms Of Service
             </a>
           </li>
+          <li className="mb-2 arrow">
+            <a href="/privacy-policy" className="text-zinc-700">
+              Privacy Policy
+            </a>
+          </li>
         </ul>
       </div>
 

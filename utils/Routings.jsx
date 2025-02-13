@@ -28,6 +28,7 @@ import GoogleShoppingAds from "../src/services/GoogleShoppingAds";
 import GoogleBusiness from "../src/services/GoogleBusiness";
 import GoogleAnalytics from "../src/services/GoogleAnalytics";
 import DisplayAdvertising from "../src/services/DisplayAdvertising";
+import PrivacyPolicy from "../src/pages/PrivacyPolicy";
 
 const Routings = () => {
   return (
@@ -51,6 +52,7 @@ const Routings = () => {
         <Route path="/google-analytics" element={<GoogleAnalytics />} />
         <Route path="/display-advertising" element={<DisplayAdvertising />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/portfolio">
           <Route path="app1" element={<ProductsTemp img={app1} />} />
           <Route path="product1" element={<ProductsTemp img={product1} />} />
