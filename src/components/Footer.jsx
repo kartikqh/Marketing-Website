@@ -22,7 +22,7 @@ const Footer = () => {
       <div data-aos="fade-right" >
         <h1 className="text-xl font-light mb-3">Onkar Digital Services</h1>
         <p className="mb-1">51 Saraswati Vihar  Raipur road</p>
-        <p className="mb-5">Dehrdaun, UK(In) 248001</p>
+        <p className="mb-5">Dehradun, UK(In) 248001</p>
 
         <div>
           <p className="font-medium">
